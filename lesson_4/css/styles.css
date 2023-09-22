@@ -1,0 +1,166 @@
+@import url('reset.css');
+
+/* ======================================================== */
+
+.wrapper {}
+
+
+/* HEADER ========================================================= */
+
+.header {}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.header__link {}
+
+
+/* MAIN =================================================================== */
+
+.page {}
+
+.page__main {}
+
+.page__main>p {
+    color: brown;
+}
+
+.page__main h2 {
+    color: rgb(65, 63, 63);
+}
+
+.page__main>ul>li {
+    color: pink;
+}
+
+.page__main>ul>li>ul {
+    color: violet;
+}
+
+.page__gameplay {}
+
+.gameplay {}
+
+.gameplay__base {}
+
+
+/* OPTIONS============================== */
+
+
+/* OPTION 1 ----------------------------- */
+
+
+/* .gameplay__base p {
+    color: rgb(3, 3, 82);
+} */
+
+
+/* OPTION 2 ----------------------------- */
+
+
+/* .gameplay__base>p {
+    color: rgb(3, 3, 82);
+} */
+
+
+/* OPTION 3---------------------------------------- */
+
+
+/* .gameplay__base>h3+p {
+    color: rgb(3, 3, 82);
+} */
+
+
+/* OPTION 4------------------------------------------------- */
+
+.page__gameplay>.gameplay__base>h3+p {
+    color: rgb(3, 3, 82);
+}
+
+
+/* ======================================= */
+
+#gb {
+    color: crimson;
+}
+
+.gameplay__class {}
+
+.gameplay__class>h3+p {
+    color: rgb(9, 97, 90);
+}
+
+.gameplay__class h3 {
+    color: crimson;
+}
+
+.class {}
+
+
+/* ALLIANCE--------------------------------- */
+
+.class__alliance {}
+
+.class__alliance>.alliance__desc>p {
+    color: blue;
+}
+
+.alliance__desc {}
+
+
+/* HORDE ------------------------ */
+
+.class__horde {}
+
+.class__horde>.horde__desc>ul+p {
+    color: green;
+}
+
+.horde__desc {
+    color: red;
+}
+
+
+/* DEV ----------------------------------- */
+
+.page__development i {
+    color: aquamarine;
+}
+
+.page__development.development {
+    color: aqua;
+}
+
+
+/* PLOT----------------------------- */
+
+.page__plot {}
+
+.page__plot>h3 {
+    color: yellow;
+}
+
+.page__plot~div {
+    color: navy;
+}
+
+
+/* AWARDS------------------------ */
+
+.page__awards {}
+
+.page__awards>h3 {
+    color: crimson;
+}
+
+
+/* FOOTER ====================================================================== */
+
+.footer__up {
+    color: rgb(163, 101, 8);
+}

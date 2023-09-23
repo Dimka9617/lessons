@@ -1,0 +1,295 @@
+/* GOOGLE FONTS WEB SITE =====================================*/
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap'); */
+
+
+/* GOOGLE FONTS EXTENSION ================================================================= */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+/* ----------------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Frijole:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Trirong:regular,italic,700&display=swap");
+
+/* ======================================================================================= */
+@import url("fonts.css");
+@import url('reset.css');
+
+/* HTML ======================================================================================= */
+
+.header {
+}
+.header__body {
+}
+.header__title {
+	font-family: "Frijole";
+	font-size: 40px;
+	line-height: 1.9;
+}
+.header__subtitle {
+	font-family: "Trirong";
+	font-style: italic;
+	font-size: 25px;
+	line-height: 1.5;
+}
+.header__socials {
+}
+.header__link {
+}
+/* MAIN BLOCK -------------------------------------------------------------------- */
+.page {
+}
+.page__main-block {
+}
+.main-block {
+}
+.main-block__img {
+}
+.main-block__text {
+	font-family: "Atkinson Hyperlegible";
+	font-size: 20px;
+	line-height: 1.4;
+}
+.main-block__text>p>a{
+	color: rgb(165, 4, 4);
+	text-decoration: underline;
+	font-family: "Atkinson Hyperlegible";
+	font-style: italic;
+	font-size: 25px;
+}
+.main-block__text ul li{
+	font-size: 22px;
+	font-family: "Charm";
+	font-weight: 700;
+	letter-spacing: 1.3px;
+	color: rgba(107, 33, 4, 0.692);
+	line-height: 1.6;
+}
+.main-block__text span{
+	color: rgb(189, 9, 9);
+	font-family: "Frijole";
+	font-size: 25px;
+}
+.text {
+	
+}
+/* MEMBERS------------------------------------------- */
+.page__members {
+}
+.members {
+}
+.members__title {
+}
+.label {
+	font-family: "Frijole";
+	font-size: 26px;
+	text-align: center;
+	letter-spacing: 1.5px;
+	text-shadow: 10px 8px 10px black;
+}
+.members__text {
+	font-family: "Atkinson Hyperlegible";
+	font-size: 20px;
+	line-height: 1.3;
+}
+.members__text >p+p{
+	color: red;
+}
+.members__img {
+}
+/* MAJORITY---------------------------------------------------- */
+.page__majority {
+}
+.majority {
+}
+.majority__title {
+}
+.majority__text {
+	font-family: "Trirong";
+	font-size: 27px;
+	line-height: 1.4;
+}
+.majority__text span{
+	text-decoration: underline;
+	color: crimson;
+}
+/* COREY TAYLOR ------------------------------------------------- */
+.page__corey-taylor {
+}
+.corey-taylor {
+}
+.corey-taylor__title {
+}
+.corey-taylor__img {
+	text-align: center;
+}
+.corey-taylor__text {
+	font-family: "Trirong";
+	font-style: italic;
+	font-size: 30px;
+	letter-spacing: 0.5px;
+}
+/* TRAGEDY --------------------------------------------------- */
+.page__tragedy {
+}
+.tragedy {
+}
+.tragedy__title {
+}
+.tragedy__text {
+	font-family: "Inter";
+	font-size: 23px;
+}
+.tragedy__text span{
+	text-decoration: line-through;
+}
+.tragedy__img {
+}
+.tragedy__link {
+}
+/* BEST ALBUM------------------------------------------------------- */
+.page__best-album {
+}
+.best-album {
+}
+.best-album__text {
+	font-family: "Poppins";
+}
+.best-album__text > p{
+	color: rgb(70, 71, 71);
+	font-size: 24px;
+}
+.best-album__text > p +p{
+	color: burlywood;
+}
+.best-album__text > p +p +p{
+	color: darkred;
+	text-decoration: underline;
+}
+.best-album__text li{
+	font-family: "Atkinson Hyperlegible";
+	text-align: center;
+	line-height: 1.7;
+	letter-spacing: 1.6px;
+	font-size: 22px;
+	color: indigo;
+}
+/* SONGS ------------------------------------------------------- */
+.page__songs {
+}
+.songs {
+}
+.songs__title {
+}
+.songs__text {
+	font-family: "Atkinson Hyperlegible";
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+}
+.songs__text li{
+	font-family: "Frijole";
+	font-size: 18px;
+	color: rgb(29, 28, 28);
+	letter-spacing: 2.7px;
+}
+.songs__text a{
+	font-family: "Frijole";
+	color: darkred;
+	text-transform: uppercase;
+	font-size: 17px;
+	letter-spacing: 2px;
+}
+.songs__text span{
+	text-decoration: underline;
+	text-transform: capitalize;
+	letter-spacing: 1.8px;
+	color: orangered;
+}
+.songs__img {
+}
+/* FIGMA CONTENT--------------------------------------------------------- */
+.page__figma-content {
+}
+.figma-content {
+}
+.figma-content__consulting {
+}
+.consulting {
+}
+.consulting__label {
+}
+.consulting__text {
+	color: #7D7D7D;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.46;
+}
+.consulting__subtitle {
+	color: #6B77E5;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+.title{
+	color: #37393F;
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	text-align: center;
+
+}
+/* PROJECT---------------------------------------------------- */
+.figma-content__project {
+}
+.project {
+}
+.project__label {
+}
+.project__text {
+	font-family: Inter;
+	color: #7D7D7D;
+	font-size: 18px;
+	line-height: 1.46;
+	font-weight: 400;
+}
+.project__text li{
+	font-weight: 500;
+	text-indent: 20px;
+}
+/* FOOTER================================================================= */
+.footer {
+	background-color: #37393F;
+}
+.footer__body {
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.8;
+}
+.footer__logo {
+	text-align: center;
+}
+.footer__link {
+}
+.footer__contacts {
+	text-align: center;
+}
+.footer__phone {
+}
+.footer__mail {
+}
+.footer__location{
+	text-align: center;
+}
+.footer__copyright{
+	text-align: right;
+	font-family: "Trirong";
+	font-size: 24px;
+}

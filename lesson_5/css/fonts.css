@@ -1,0 +1,48 @@
+/* Atkinson Hyperlegible------------------------ */
+
+@font-face {
+	font-family: "Atkinson Hyperlegible";
+   src: 	url(../fonts/AtkinsonHyperlegible-Regular.woff2) format(woff2), 
+	 		url(../fonts/AtkinsonHyperlegible-Regular.woff) format(woff);
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Atkinson Hyperlegible";
+   src: 	url(../fonts/AtkinsonHyperlegible-Italic.woff2) format(woff2), 
+			url(../fonts/AtkinsonHyperlegible-Italic.woff) format(woff);
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Atkinson Hyperlegible";
+	src:	url(../fonts/AtkinsonHyperlegible-BoldItalic.woff2) format(woff2),
+			url(../fonts/AtkinsonHyperlegible-BoldItalic.woff) format(woff);
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Atkinson Hyperlegible" ;
+	src: 	url(../fonts/AtkinsonHyperlegible-Bold.woff2) format(woff2),
+			url(../fonts/AtkinsonHyperlegible-Bold.woff) format(woff);
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* CHARM------------------------------------ */
+
+@font-face {
+	font-family: "Charm";
+	src: 	url(../fonts/charm/Charm-Regular.woff2) format(woff2),
+			url(../fonts/charm/Charm-Regular.woff) format(woff);
+	font-display: swap;
+}
+@font-face {
+	font-family:  "Charm";
+	src: 	url(../fonts/charm/Charm-Bold.woff2) format(woff2),
+			url(../fonts/charm/Charm-Bold.woff) format(woff);
+	font-weight: 700;
+	font-display: swap;
+}

@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+@font-face {
+	font-family: 'Merriweather';
+	src: 
+			url(../fonts/Merriweather-BoldItalic.woff2) format(woff2),
+			url(../fonts/Merriweather-BoldItalic.woff) format(woff);
+	font-display: swap;
+	font-style: italic;
+	font-weight: 700;
+}

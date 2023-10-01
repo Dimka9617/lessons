@@ -365,6 +365,9 @@ ul li{
 	line-height: 1.67;
 	letter-spacing: 0.4px;
 }
+.euphoria{
+	font-weight: 700;
+}
 /* OTHER ====================================================== */
 .other {
 	margin-bottom: 100px;

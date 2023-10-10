@@ -1,0 +1,486 @@
+@import url('fonts.css');
+@import url('reset.css');
+/* HTML ====================================================================== */
+body{
+	height: 100%;
+	font-family: "Inter";
+	color: #7D7D7D;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.46;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+}
+/* CONTAINER -------------------------------------- */
+[class*="__container"]{
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+.header__container {
+	max-width: 1270px;
+}
+.background__container{
+	max-width: 1300px;
+}
+.wecare__container {
+	max-width: 700px;
+}
+.projects__container {
+	max-width: 1250px;
+}
+.clothing__container{
+	max-width: 1270px;
+}
+.fashion__container {
+	max-width: 1270px;
+}
+.footer__container {
+	max-width: 1130px;
+}
+/* HEADER ================================================================= */
+.header {
+	padding: 100px 0px;
+	background: url(../img/repeat.jpg);
+	box-shadow: 2px 2px 2px 3px black;
+	margin-bottom: 15px;
+}
+h1{
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+.header ul{
+	color:white;
+	text-align: center;
+}
+.header ul li{
+	border-bottom: 1px solid white;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 20px;
+}
+/* MAIN PAGE==================================================== */
+.page {
+}
+.page__main-content{
+}
+.page__background {
+	margin-bottom: 100px;
+}
+.page__wecare {
+	margin-bottom: 70px;
+}
+.page__projects {
+	margin-bottom: 90px;
+}
+.page__clothing {
+	margin-bottom: 110px;
+}
+.page__fashion {
+	margin-bottom: 80px;
+}
+/* MAIN-CONTENT========================================================= */
+.background {
+}
+.background__block {
+	margin-bottom: 20px;
+}
+.block-one-cover {
+	height: 600px;
+	border: 1px solid black;
+	background: url(../img/animals.jpg) 0 0 / cover no-repeat;
+}
+.block-one-contain{
+	height: 600px;
+	border: 1px solid black;
+	background: url(../img/animals.jpg) 50% / contain no-repeat;
+}
+.block-two{
+	width: 1200px;
+	min-height: 800px;
+	text-align: center;
+	padding: 350px 50px;
+	background: url(../img/wood.jpg) 0 0 / cover no-repeat fixed;
+	color: black;
+	font-size: 30px;
+}
+.block-three{
+	min-height: 700px;
+	padding: 50px;
+	background: white url(../img/q82576.jpg) no-repeat;
+	background-position: 50%;
+	background-attachment: fixed;
+}
+.block-four{
+	min-height: 500px;
+	background: url(../img/q82576.jpg) 50% / 100px no-repeat fixed,
+	linear-gradient(248deg, rgba(29,86,253,0.9416141456582633) 50%, rgba(226,191,10,0.9248074229691877) 59%) 100px 20px / auto no-repeat;
+}
+.block-five{
+	min-height: 1000px;
+	outline: 1px solid red;
+	background: url(../img/tumblr_lh0trecmPD1qb3gkh.png) 50% 15% / 300px no-repeat fixed,
+	url(../img/plankton.png) 50% / 150px no-repeat fixed,
+	url(../img/bucket.png) bottom / 400px no-repeat,
+	url(../img/spongebob-shoked-mr-krabs-pack.png) right 100px / auto no-repeat,
+	url(../img/bikini-bottom-fon.jpg) 0 0 / cover no-repeat fixed;
+}
+.block-five img{
+	display:block;
+	margin: 0 auto;
+}
+/* WE CARE ========================================================= */
+.wecare {
+}
+.wecare__body > ul{
+	color: #37393F;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 43px;
+} 
+.wecare__body >ul li{
+	padding-left: 35px;
+	background: url(../img/wecare/vector.svg) 0 1.5px no-repeat;
+	min-height: 30px;
+}
+.wecare__body ul>li{
+	margin-bottom: 23px;
+}
+.wecare__body ul>li+li{
+	margin-bottom: 0px;
+}
+.wecare__head, .wecare__text {
+	margin-bottom: 20px;
+}
+.wecare__head h4{
+	margin-bottom: 16px;
+	padding-left: 18px;
+	background: url(../img/wecare/box.png) 0 5px no-repeat;
+}
+.title{
+	color: #37393F;
+	font-weight: 500;
+	line-height: 1.2;
+	min-height: 25px;
+}
+.label{
+	color: #37393F;
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+.wecare__text {
+}
+.wecare__text>p{
+	margin-bottom: 15px;
+}
+.wecare__text>p+p{
+	margin-bottom: 0;
+}
+.wecare__advantage {
+	font-size: 0;
+	margin-bottom: 37px;
+}
+.advantage h3 {
+	color: #37393F;
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 12px;
+}
+.advantage p{
+	font-size: 16px;
+	line-height: 1.35;
+}
+.advantage__experience {
+	margin-right: 21px;
+}
+.style {
+	border: 1px solid #E3E3E3;
+	display: inline-block;
+	max-width: 295px;
+	padding: 31px 32px;
+	width: 100%;
+	vertical-align: top;
+}
+.advantage__experience-item{
+	background: url(../img/wecare/icon1.svg) no-repeat;
+	padding-left: 58px;
+}
+.advantage__winner {
+}
+.advantage__winner-item{
+	background: url(../img/wecare/icon2.svg) no-repeat;
+	padding-left: 58px;
+}
+.wecare__btn{
+	display: inline-block;
+	padding: 21px 27px;
+	text-align: center;
+	background: #6B77E5;
+	color: #FFF;
+	font-weight: 600;
+	line-height: 1.2;
+	min-height: 40px;
+}
+/* PROJECTS ============================================================== */
+.projects {
+}
+.projects__body {
+}
+.projects__head {
+	margin-bottom: 47px;
+	text-align: center;
+}
+.projects__head > h4{
+	padding-left: 18px;
+	display: inline-block;
+	background: url(../img/wecare/box.png) 0px 5px no-repeat;
+}
+.projects__head >*{
+	margin-bottom: 14px;
+}
+.projects__head p{
+	margin-bottom: 0px;
+}
+.project__items>div+div{
+	margin-bottom: 0px;
+}
+.project__row {
+	font-size: 0;
+	margin-bottom: 58px;
+}
+.project__row span+div{
+	margin-right: 0px;
+}
+.project__card {
+	max-width: 384px;
+	display: inline-block;
+	margin-right: 34px;
+	width: 100%;
+	vertical-align: top;
+}
+.card-project {
+}
+.card-project__img {
+	display: inline-block;
+	min-width: 384px;
+	min-height: 500px;
+	margin-bottom: 24px;
+}
+.one{
+	background: url(../img/projects/1.png) center / cover no-repeat;
+}
+.two{
+	background: url(../img/projects/2.png) center / cover no-repeat;
+}
+.three{
+	background: url(../img/projects/3.png) center / cover no-repeat;
+}
+.four{
+	background: url(../img/projects/4.png) center / cover no-repeat;
+}
+.five{
+	background: url(../img/projects/5.png) center / cover no-repeat;
+}
+.six{
+	background: url(../img/projects/6.png) center / cover no-repeat;
+}
+.naming{
+	display: inline-block;
+	color: #37393F;
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+.card-project p{
+	background: url(../img/projects/vector.svg) no-repeat;
+	padding-left: 27px;
+	color: #7D7D7D;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.46;
+}
+/* CLOTHING ============================================================== */
+.clothing{
+	color: #807D7E;
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.67; 
+	letter-spacing: 0.4px
+}
+.clothing__body h4{
+	padding-left: 21px;
+	color: #3C4242;
+	font-family: 'Core Sans C';
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.19;
+	letter-spacing: 0.56px;
+	background: url(../img/clothing/purple.png) no-repeat;
+	margin-bottom: 30px;
+}
+.clothing__body {
+}
+.clothing__content {
+	padding-left: 21px;
+}
+.clothing__content h5{
+	color: #807D7E;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+.clothing__content span{
+font-weight: 700;
+line-height: 33.5px;
+}
+.clothing__reexplore {
+	margin-bottom: 25px;
+}
+.clothing__reexplore >h5+p{
+	margin-bottom: 20px;
+}
+.clothing__one-stop >h5+p{
+	margin-bottom: 20px;
+}
+.clothing__one-stop {
+	margin-bottom: 20px;
+}
+.clothing__link {
+	color: #807D7E;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+}
+/* FASHION =============================================================== */
+.fashion {
+}
+.fashion__body {
+}
+.fashion__row{
+	font-size: 0;
+}
+.fashion__block-one {
+	vertical-align: top;
+	display: inline-block;
+	max-width: 614px;
+	width: 100%;
+	min-height: 640px;
+	background: url(../img/fashion/leaves.png) center / cover no-repeat;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.block__one-content{
+	padding: 170px 74px 173px;
+}
+.block__one-content h4 {
+	margin-bottom: 50px;
+	font-family: "Causten";
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.2;
+	letter-spacing: 1px;
+}
+.fashion__block-one h2{
+	color: #FFF;
+	font-family: "Core Sans C";
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.47;
+	letter-spacing: 0.208px;
+	margin-bottom: 30px;
+}
+.block-one {
+}
+.block__one-link {
+	font-family: "Causten";
+	display: inline-block;
+	color: #3C4242;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	padding: 12px 44px;
+	border-radius: 8px;
+	background: #FFF;
+	min-height: 40px;
+}
+.fashion__block-two {
+	max-width: 626px;
+	width: 100%;
+	min-height: 640px;
+	display: inline-block;
+	background: url(../img/fashion/guys.png) center / cover no-repeat;
+}
+/* FOOTER ======================================================== */
+.footer {
+	background: url(../img/footer.jpg) 0 0 / cover no-repeat;	
+	padding: 80px 0px;
+}
+.footer__body {
+}
+.footer__body > a+ul{
+	margin-right: 300px;
+}
+.footer__body ul{
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	margin-bottom: 50px;
+}
+.footer__body ul span+li{
+	margin-bottom: 0px;
+}
+.footer__body ul li{
+	border-bottom: 1px solid white;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.footer__logo {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: linear-gradient(180deg, rgba(210,222,10,0.7091211484593838) 21%, rgba(121,24,9,0.9332107843137255) 60%, rgba(248,0,255,0.804359243697479) 100%);
+	margin-right: 300px;
+	text-align: center;
+	padding-top: 60px;
+	text-transform: uppercase;
+	color: blue;
+}
+.footer__copy {
+	text-align: center;
+	font-size: 27px;
+	color: white;
+	margin-bottom: 30px;
+}
+.footer__up{
+	text-align: center;
+	color: white;
+	padding: 30px 0px;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: #060e4d;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0px 0px 1000px 50px rgb(241, 226, 14);
+	margin-left: 500px;
+}

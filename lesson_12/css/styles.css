@@ -328,6 +328,7 @@ h1{
 }
 .item-consulting__img {
 	position: relative;
+	object-fit: cover;
 }
 .item-consulting__img::before{
 	content: "";

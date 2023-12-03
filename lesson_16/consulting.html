@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Call Us</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__list">
+					<li class="header__item">
+						<a target="_blank" href="index.html" class="header__link">Custom form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="consulting.html" class="header__link">Consulting form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="myinfo.html" class="header__link">My info</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="checkout.html" class="header__link">check out</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__consulting consulting">
+				<div class="consulting__container">
+					<div class="consulting__body">
+						<h4>Contact Us</h4>
+						<h1>Request A Call Back !</h1>
+						<form class="consulting__form form-consulting" action="https://jsonplaceholder.typicode.com/posts"
+							enctype="multipart/form-data" method="GET">
+							<input title="Fill in the field" autofocus required placeholder="Your Name"
+								class="form-consulting__name" type="text" name="text" id="text">
+							<input title="Fill in the field" required placeholder="Email Address"
+								class="form-consulting__email" type="email" name="email" id="email">
+							<input title="Fill in the field" required placeholder="Phone Number" class="form-consulting__tel"
+								type="tel" name="tel" id="tel">
+							<input title="Fill in the field" required placeholder="Subject" class="form-consulting__subject"
+								type="text" name="subject" id="subject">
+							<textarea title="Describe your issue" placeholder="Message..." name="message"
+								id="message"></textarea>
+							<button type="submit">Submit</button>
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+		</main>
+		<footer class="footer">
+			2023
+		</footer>
+	</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

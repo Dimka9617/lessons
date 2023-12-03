@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Check Out</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__list">
+					<li class="header__item">
+						<a target="_blank" href="index.html" class="header__link">Custom form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="consulting.html" class="header__link">Consulting form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="myinfo.html" class="header__link">My info</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="checkout.html" class="header__link">check out</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__checkout checkout">
+				<div class="checkout__container">
+					<div class="checkout__body">
+						<div class="checkout__head">
+							<h2 class="checkout__title title-style">Check Out</h2>
+							<h3 class="checkout__label title-style">Billing Details</h3>
+						</div>
+						<form class="checkout__form form-checkout" id="checkout__form" enctype="multipart/form-data"
+							action="#" method="GET">
+							<div class="form-checkout__body">
+
+								<div class="form-checkout__block">
+									<label for="infname">First Name*</label>
+									<input placeholder="First Name" title="Fill in the field" id="infname" required
+										name="infname" type="text">
+								</div>
+
+								<div class="form-checkout__block">
+									<label for="inflname">Last Name*</label>
+									<input placeholder="Last Name" title="Fill in the field" id="inflname" required
+										name="inflname" type="text">
+								</div>
+
+								<div class="form-checkout__block">
+									<label for="country">Country / Region*</label>
+									<input placeholder="Country / Region" title="Fill in the field" id="country" required
+										name="country" type="text">
+								</div>
+
+								<div class="form-checkout__block">
+									<label for="company">Company Name</label>
+									<input placeholder="Company (optional)" title="Fill in the field" id="company" name="company"
+										type="text">
+								</div>
+
+								<div class="form-checkout__block">
+									<label for="address">Street Address*</label>
+									<input placeholder="House number and street name" title="Fill in the field" id="address"
+										required name="address" type="text">
+								</div>
+
+								<div class="form-checkout__block">
+									<label for="suite">Apt, suite, unit</label>
+									<input placeholder="apartment, suite, unit, etc. (optional)" title="Fill in the field"
+										id="suite" name="suite" type="text">
+								</div>
+
+								<div class="form-checkout__block-small">
+									<label for="city">City*</label>
+									<input placeholder="Town / City" title="Fill in the field" id="city" name="city" type="text">
+								</div>
+
+								<div class="form-checkout__block-small">
+									<label for="state">State*</label>
+									<div class="form-checkout__select">
+										<select required name="state" id="state">
+											<option disabled selected value="">State</option>
+											<option value="2">Colorado</option>
+											<option value="3">Kanzas</option>
+											<option value="4">Alaska</option>
+											<option value="5">California</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-checkout__block-small">
+									<label for="postal">Postal Code*</label>
+									<input placeholder="Postal Code" title="Fill in the field" id="postal" name="postal"
+										type="number">
+								</div>
+
+								<div class="form-checkout__block form-checkout__block--style">
+									<label for="tel">Phone*</label>
+									<input required placeholder="Phone" title="Fill in the field" id="tel" name="tel" type="tel">
+								</div>
+
+								<div class="form-checkout__btn btn-check">
+									<button class="btn-check__delivery" type="submit">
+										<span class="btn-check__delivery-text">Continue to delivery</span></button>
+								</div>
+
+								<div class="form-checkout__block-delivery delivery">
+									<input class="delivery__input" type="checkbox" name="checkout" value="1" id="checkout">
+									<label class="delivery__label" for="checkout">Save my information for a faster
+										checkout</label>
+								</div>
+
+							</div>
+
+						</form>
+						<form action="https://jsonplaceholder.typicode.com/posts" id="pay" class="checkout__pay pay-checkout"
+							method="POST">
+							<div class="pay-checkout__body">
+								<div class="pay-checkout__content">
+									<div class="pay-checkout__head">
+										<h3 class="pay-checkout__title title-style">Shipping Address</h3>
+										<h4>Select the address that matches your card or payment method.</h4>
+									</div>
+									<div class="pay-checkout__block">
+										<div class="pay-checkout__billing">
+											<input checked type="radio" required name="billing" class="pay-checkout__radio"
+												value="billing" id="billing">
+											<label class="pay-checkout__label label-style" for="billing">Same as Billing
+												address</label>
+										</div>
+										<div class="pay-checkout__shipping">
+											<input type="radio" required name="billing" class="pay-checkout__radio" value="billing"
+												id="shipping">
+											<label class="pay-checkout__label label-style" for="shipping">Use a different shipping
+												address</label>
+										</div>
+									</div>
+								</div>
+								<div class="pay-checkout__content">
+									<h3 class="pay-checkout__title title-style">Shipping Method</h3>
+									<div class="pay-checkout__block">
+										<div class="pay-checkout__arrive label-style">
+											Arrives by Monday, June 7
+										</div>
+										<div class="pay-checkout__delivery delivery">
+											<div class="delivery__text label-style">
+												Delivery Charges
+												<p>Additional fess may apply</p>
+											</div>
+											<div class="delivery__price label-style">$5.00</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="pay-checkout__content">
+									<div class="pay-checkout__head">
+										<h3 class="pay-checkout__title title-style">Payment Method</h3>
+										<h4>All transactions are secure and encrypted.</h4>
+									</div>
+									<div class="pay-checkout__block">
+										<div class="pay-checkout__card">
+											<input type="radio" required name="pay" class="pay-checkout__radio credit-card"
+												value="credit" id="credit">
+											<label for="credit" class="pay-checkout__label-cash label-style">Credit Card</label>
+											<p class="pay-checkout__sub">We accept all major credit cards.</p>
+											<div class="pay-checkout__cards cards">
+												<div class="cards__labels">
+													<input type="radio" class="cards__input" id="gpay" name="model-pay" value="gpay">
+													<label class="cards__label" for="gpay">
+														<img src="img/credit/01.svg" alt="Google Pay">
+													</label>
+													<input type="radio" class="cards__input" id="visa" name="model-pay" value="visa">
+													<label class="cards__label" for="visa">
+														<img src="img/credit/02.svg" alt="Visa">
+													</label>
+													<input type="radio" class="cards__input" id="paypal" name="model-pay"
+														value="paypal">
+													<label class="cards__label" for="paypal">
+														<img src="img/credit/03.svg" alt="Paypal">
+													</label>
+													<input type="radio" class="cards__input" id="paypass" name="model-pay"
+														value="paypass">
+													<label class="cards__label" for="paypass">
+														<img src="img/credit/04.svg" alt="Paypass">
+													</label>
+												</div>
+												<div class="cards__row">
+													<div class="cards__field">
+														<!--Валідатор свариться на атрибути maxlength та minlength для інпиту типу number тому прибрав ці атрибути( maxlength="16" та minlength="16" ) з поля для номера картки -->
+														<input class="cards__number" placeholder="Card number" type="number"
+															name="number-value">
+													</div>
+
+													<div class="cards__field">
+														<input name="name-value" class="cards__name" placeholder="Name of card"
+															type="text">
+													</div>
+
+													<div class="cards__field">
+														<input name="date-value" class="cards__date"
+															placeholder="Expiration date (MM/YY)" type="number">
+													</div>
+
+													<div class="cards__field">
+														<input name="password-value" class="cards__password"
+															placeholder="Security Code" type="password">
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="pay-checkout__billing cash-delivery">
+											<input type="radio" required name="pay" class="pay-checkout__radio" value="pay"
+												id="cash">
+											<label class="pay-checkout__label-cash label-style" for="cash">Cash on delivery</label>
+											<p class="pay-checkout__sub">Pay with cash upon delivery.</p>
+										</div>
+										<div class="pay-checkout__shipping">
+											<input type="radio" required name="pay" class="pay-checkout__radio" value="paypol"
+												id="paypol">
+											<label class="pay-checkout__label label-style" for="paypol">Paypol</label>
+										</div>
+									</div>
+								</div>
+								<button class="pay-checkout__button" type="submit"><span class="pay-checkout__button-style">Pay
+										Now</span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>

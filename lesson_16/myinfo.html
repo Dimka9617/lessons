@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>My Info</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__list">
+					<li class="header__item">
+						<a target="_blank" href="index.html" class="header__link">Custom form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="consulting.html" class="header__link">Consulting form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="myinfo.html" class="header__link">My info</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="checkout.html" class="header__link">check out</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__myinfo myinfo">
+				<div class="myinfo__container">
+					<div class="myinfo__body">
+						<div class="myinfo__head">
+							<h2 class="myinfo__title title-style">My Info</h2>
+							<h3 class="myinfo__label title-style">Add Address</h3>
+						</div>
+						<form method="GET" id="info_form" name="myinfo_form" enctype="multipart/form-data"
+							class="myinfo__form form-info" action="#">
+							<div class="form-info__body">
+
+								<div class="form-info__block">
+									<label for="infname">First Name*</label>
+									<input placeholder="First Name" title="Fill in the field" id="infname" required
+										name="infname" type="text">
+								</div>
+
+								<div class="form-info__block">
+									<label for="inflname">Last Name*</label>
+									<input placeholder="Last Name" title="Fill in the field" id="inflname" required
+										name="inflname" type="text">
+								</div>
+
+								<div class="form-info__block">
+									<label for="country">Country / Region*</label>
+									<input placeholder="Country / Region" title="Fill in the field" id="country" required
+										name="country" type="text">
+								</div>
+
+								<div class="form-info__block">
+									<label for="company">Company Name</label>
+									<input placeholder="Company (optional)" title="Fill in the field" id="company" name="company"
+										type="text">
+								</div>
+
+								<div class="form-info__block">
+									<label for="address">Street Address*</label>
+									<input placeholder="House number and street name" title="Fill in the field" id="address"
+										required name="address" type="text">
+								</div>
+
+								<div class="form-info__block">
+									<label for="suite">Apt, suite, unit</label>
+									<input placeholder="apartment, suite, unit, etc. (optional)" title="Fill in the field"
+										id="suite" name="suite" type="text">
+								</div>
+
+								<div class="form-info__block">
+									<label for="city">City*</label>
+									<input placeholder="Town / City" title="Fill in the field" id="city" name="city" type="text">
+								</div>
+
+								<div class="form-info__block">
+									<label for="state">State*</label>
+									<div class="form-info__select select">
+										<select required class="select__field" name="state" id="state">
+											<option value="" disabled selected>State</option>
+											<option value="2">Colorado</option>
+											<option value="3">Kanzas</option>
+											<option value="4">Alaska</option>
+											<option value="5">California</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-info__block">
+									<label for="tel">Phone*</label>
+									<input required placeholder="Phone" title="Fill in the field" id="tel" name="tel" type="tel">
+								</div>
+
+								<div class="form-info__block">
+									<label for="postal">Postal Code*</label>
+									<input placeholder="Postal Code" title="Fill in the field" id="postal" name="postal"
+										type="number">
+								</div>
+
+								<div class="form-info__block">
+									<label for="textarea">Delivery Instruction</label>
+									<textarea name="textarea" id="textarea" placeholder="Delivery Instruction"></textarea>
+								</div>
+
+								<div class="form-info__check-block">
+									<div class="form-info__check check">
+										<input class="check__input" type="checkbox" name="shipping" value="shiping" id="shipping">
+										<label class="check__label" for="shipping">Set as default shipping address</label>
+									</div>
+									<div class="form-info__check check">
+										<input class="check__input" type="checkbox" name="billing" value="billing" id="billing">
+										<label class="check__label" for="billing">Set as default billing address</label>
+									</div>
+								</div>
+
+								<div class="form-info__buttons button">
+									<button class="button__save btn-style" type="submit"><span
+											class="button__save-text">Save</span></button>
+									<button class="button__cancel btn-style" type="reset"><span
+											class="button__cancel-text">Cancel</span></button>
+								</div>
+
+
+							</div>
+
+						</form>
+					</div>
+
+				</div>
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">2023</div>
+
+		</footer>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Forms</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<ul class="header__list">
+					<li class="header__item">
+						<a target="_blank" href="index.html" class="header__link">Custom form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="consulting.html" class="header__link">Consulting form</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="myinfo.html" class="header__link">My info</a>
+					</li>
+					<li class="header__item">
+						<a target="_blank" href="checkout.html" class="header__link">check out</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__log log">
+				<div class="log__container">
+
+					<a href="#form" class="log__link">
+						<img src="img/login.png" alt="Login">
+					</a>
+
+					<form action="https://jsonplaceholder.typicode.com/posts" id="form" class="log__form form"
+						enctype="multipart/form-data">
+						<div class="form__body">
+							<div class="form__line">
+								<div class="form__label">
+									<label for="fname">First Name</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/user.ico" alt="User">
+									</div>
+									<input type="text" name="fname" id="fname" placeholder="First name" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="lname">Last Name</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/user.ico" alt="User">
+									</div>
+									<input type="text" name="lname" id="lname" placeholder="Last name" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="email">E-Mail</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/mail_email_message_electronic_online_web_icon-icons.com_59986.ico"
+											alt="E-mail">
+									</div>
+									<input type="email" name="email" id="email" placeholder="E-mail Address" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="tel">Phone #</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/phone-call-auricular-symbol-in-black_icon-icons.com_56483.ico"
+											alt="Phone">
+									</div>
+									<input type="tel" name="tel" id="tel" placeholder="+380(97) 333-33-33" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="address">Address</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/house_38533.ico" alt="House">
+									</div>
+									<input type="text" name="address" id="address" placeholder="Address" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="city">City</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/house_38533.ico" alt="House">
+									</div>
+									<input type="text" name="city" id="city" placeholder="City" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="state">State</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/3844437-hamburger-list-menu-more-navigation_110311.ico" alt="Menu">
+									</div>
+									<select class="form__select" name="state" id="state" required>
+										<option selected disabled value="">Please select your state
+										</option>
+										<option value="Arizona">Arizona</option>
+										<option value="Florida">Florida</option>
+										<option value="Alaska">Alaska</option>
+										<option value="Colorado">Colorado</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="zip">Zip Code</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/house_38533.ico" alt="House">
+									</div>
+									<input type="number" name="zip" id="zip" placeholder="Zip Code" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="web">Website or domain name</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/seo-social-web-network-internet_174_icon-icons.com_61537.ico"
+											alt="Web">
+									</div>
+									<input type="url" name="web" id="web" placeholder="Website or domain name" required>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<h4>Do you have hosting?</h4>
+								</div>
+								<div class="form__radio">
+									<div class="form__field">
+										<input value="yes" type="radio" name="hostname" id="host" required>
+										<label for="host">Yes</label>
+									</div>
+									<div class="form__field">
+										<input value="no" type="radio" name="hostname" id="host2" required>
+										<label for="host2">No</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__label">
+									<label for="desc">Project Description</label>
+								</div>
+								<div class="form__field">
+									<div class="form__icon">
+										<img src="img/form/pen-black-diagonal-symbol-of-writing-tool_icon-icons.com_54470.ico"
+											alt="Pen">
+									</div>
+									<textarea name="desc" id="desc" placeholder="Project Description"></textarea>
+								</div>
+							</div>
+						</div>
+						<button id="#form" class="form__btn" type="submit"><span class="form__btn-span">Send</span></button>
+					</form>
+				</div>
+
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">2023</div>
+			</div>
+
+		</footer>
+	</div>
+</body>
+
+</html>

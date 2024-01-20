@@ -1,0 +1,105 @@
+@mixin absolute($pos:absolute, $top:0, $left:0, $width:100%, $height:100%){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+// -----------------------------
+@mixin title($col:$colorBlack, $ff:$alternativeFont, $fs:34px, $fw:600px, $lh:33.5px, $let_spas:0.68px){
+	color: $colorBlack;
+	font-family: $alternativeFont;
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 33.5px; /* 98.529% */
+	letter-spacing: 0.68px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	&:not(:last-child){
+		margin-bottom: 70px;
+	}
+	&::before{
+		content: "";
+		background-color:#8A33FD;
+		border-radius: 10px;
+		width: 6px;
+		height: 30px;
+	}
+	@media(max-width:1024px){
+		&:not(:last-child){
+			margin-bottom: 50px;
+		}
+	}
+	@media(max-width:$mobile){
+		&:not(:last-child){
+			margin-bottom: 30px;
+			font-size: 25px;
+		}
+	}
+	@media(max-width:600px){
+		&:not(:last-child){
+			margin-bottom: 20px;
+			font-size: 21px;
+		}
+	}
+}
+// --------------------------------
+@mixin hover_link($pos:relative, $trans:all .3s){
+	position: relative;
+	transition: all .3s;
+	&::after{
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		width: 0;
+		height: 2px;
+		background-color: $colorBlack;
+		transition: all .3s;
+	}
+}
+// --------------------------------
+@mixin gridCards($type:fill, $min:240px, $max:1fr, $gap:50px){
+	display: grid;
+	grid-template-columns: repeat(auto-#{$type}, minmax($min, $max));
+	gap: $gap;
+}
+// -------------------------------
+@mixin btn($color:$colorWhite, $br:8px, $padding:16px 72px, $border:1px solid #FFF, $fw:700, $fs:24px){
+	font-family: $mainFont;
+	color: $colorBlack;
+	border-radius: $br;
+	padding: $padding;
+	border: $border;
+	background: #FFF;
+	font-weight: $fw;
+	font-size: $fs;
+	transition: all .3s;
+}
+// =======================================================================================================
+@mixin hover-effect {
+	position: relative;
+	&::before {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 0;
+	  transition: all 0.3s;
+	  background-color: rgba(30, 29, 29, 0.6);
+	  border-radius: 12px;
+	  visibility: hidden;
+	}
+	@media (any-hover: hover) {
+	  &:hover {
+		 &::before {
+			height: 100%;
+			visibility: visible;
+		 }
+	  }
+	}
+ }

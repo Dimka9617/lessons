@@ -1,0 +1,38 @@
+@function percent($num1, $num2) {
+	$rez: math.div($num1, $num2) * 100%;
+	@return $rez;
+}
+
+@function toRem($num1, $num2: 16) {
+	$rez: math.div($num1, $num2) + rem;
+	@return $rez;
+}
+@function toEm($num1, $num2: 16) {
+	$rez: math.div($num1, $num2) + em;
+	@return $rez;
+}
+
+// ========================================================
+%btn-orange{
+	color: rgb(255, 255, 255);
+	font-size: toRem(14);
+	line-height: 2;
+	font-weight: 700;
+	letter-spacing: toRem(0.2);
+	background-color: #FF7B47;
+	padding: toRem(10) toRem(36);
+}
+%label{
+	color: rgb(37, 43, 66);
+	font-size: toRem(40);
+	font-weight: 700;
+	line-height: 1.42; /* 57/40 */
+	letter-spacing: toRem(0.2);
+}
+%sub-label{
+	color: rgb(115, 115, 115);
+	font-size: toRem(14);
+	font-weight: 500;
+	line-height: 1.42; /* 20/14 */
+	letter-spacing: toRem(0.2);
+}
